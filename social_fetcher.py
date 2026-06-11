@@ -25,9 +25,13 @@ logger = logging.getLogger(__name__)
 _PTT_BOARDS = ["Stock", "Tech_Job"]
 
 _NEWS_URLS = [
-    ("trendforce_tw", "https://www.trendforce.com.tw/"),
-    ("trendforce_en", "https://www.trendforce.com/news/"),
-    ("digitimes",     "https://www.digitimes.com/news/"),
+    ("trendforce_tw",  "https://www.trendforce.com.tw/"),
+    ("trendforce_en",  "https://www.trendforce.com/news/"),
+    ("digitimes_en",   "https://www.digitimes.com/news/"),
+    ("digitimes_tw",   "https://www.digitimes.com.tw/"),
+    ("nikkei_asia",    "https://asia.nikkei.com/"),
+    ("tomshardware",   "https://www.tomshardware.com/news"),
+    ("theregister",    "https://www.theregister.com/"),
 ]
 
 _UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
