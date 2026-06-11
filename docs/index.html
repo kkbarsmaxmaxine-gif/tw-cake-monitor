@@ -207,6 +207,8 @@
   .badge-退潮 { background: rgba(244,63,94,.15);   color: #f43f5e; }
 
   .vs-label { font-size: 0.72rem; color: #64748b; }
+  .buzz-row { font-size: 0.72rem; color: #64748b; margin-top: 4px; }
+  .buzz-row .buzz-val { color: #f59e0b; font-weight: 600; }
   .stock-list { display: flex; flex-direction: column; gap: 2px; }
   .stock-row {
     display: flex;
@@ -311,10 +313,22 @@ function switchTab(tab) {
   document.getElementById('btn-rank').classList.toggle('active',   tab === 'rank');
 }
 
-fetch('data.json?t=' + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    document.getElementById('date-label').textContent = data.date || '';
+const t = Date.now();
+Promise.all([
+  fetch('data.json?t=' + t).then(r => r.json()),
+  fetch('social_buzz.json?t=' + t).then(r => r.json()).catch(() => ({})),
+]).then(([data, preBuzz]) => {
+  if (!data.social_buzz || !(data.social_buzz.sources || []).length) {
+    data.social_buzz = preBuzz;
+    const byLayer = (preBuzz.by_layer) || {};
+    (data.layers || []).forEach(layer => {
+      const lb = byLayer[layer.layer_id] || {};
+      layer.buzz_total = lb.total || 0;
+      layer.buzz_top   = lb.top_ticker || '';
+    });
+  }
+
+  document.getElementById('date-label').textContent = data.date || '';
     const bm   = data.benchmark_chg;
     const bmEl = document.getElementById('bm-label');
     if (bm != null) {
@@ -436,6 +450,11 @@ fetch('data.json?t=' + Date.now())
       const chgCls = layer.avg_change >= 0 ? 'pos' : 'neg';
       const vsCls  = vs >= 0 ? 'pos' : 'neg';
 
+      const buzzTotal = layer.buzz_total || 0;
+      const buzzHtml  = buzzTotal > 0
+        ? `<div class="buzz-row">🔥 <span class="buzz-val">${buzzTotal}</span> 則討論${layer.buzz_top ? '  ·  ' + layer.buzz_top : ''}</div>`
+        : '';
+
       const card = document.createElement('div');
       card.className = 'layer-card';
       card.innerHTML = `
@@ -447,6 +466,7 @@ fetch('data.json?t=' + Date.now())
           <span class="state-badge badge-${state}">${state}</span>
           <span class="vs-label ${vsCls}">vs大盤 ${pct(vs)}</span>
         </div>
+        ${buzzHtml}
         <div class="stock-list">
           ${(layer.top_stocks || []).map(s => {
             const sc = s.change_pct >= 0 ? '#10b981' : '#f43f5e';
@@ -458,10 +478,9 @@ fetch('data.json?t=' + Date.now())
         </div>`;
       list.appendChild(card);
     });
-  })
-  .catch(err => {
-    document.getElementById('date-label').textContent = '資料載入失敗: ' + err.message;
-  });
+}).catch(err => {
+  document.getElementById('date-label').textContent = '資料載入失敗: ' + err.message;
+});
 </script>
 </body>
 </html>

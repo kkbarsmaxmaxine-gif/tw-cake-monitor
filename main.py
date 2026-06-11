@@ -29,6 +29,7 @@ from fetcher import fetch_daily_data, fetch_intraday_data, build_snapshot
 from analyzer import build_full_analysis
 from reporter import generate_report, print_terminal_summary, save_report
 from notifier import send_notification
+from social_fetcher import build_buzz
 
 
 def _setup_logging(level: str) -> logging.Logger:
@@ -40,7 +41,7 @@ def _setup_logging(level: str) -> logging.Logger:
     return logging.getLogger("main")
 
 
-def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str) -> None:
+def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str, buzz: dict | None = None) -> None:
     """Write docs/data.json for the bubble-chart web dashboard."""
     import math
 
@@ -70,6 +71,7 @@ def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str) -
                     "display_name": sr["display_name"],
                     "change_pct":   _f(sr["change_pct"]),
                 })
+        layer_buzz = (buzz or {}).get("by_layer", {}).get(layer_id, {})
         layers_out.append({
             "layer_id":      layer_id,
             "label":         row["layer_label"],
@@ -81,12 +83,15 @@ def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str) -
             "worst_ticker":  row["worst_ticker"],
             "worst_pct":     _f(row["worst_pct"]),
             "top_stocks":    top_stocks,
+            "buzz_total":    layer_buzz.get("total", 0),
+            "buzz_top":      layer_buzz.get("top_ticker", ""),
         })
 
     payload = {
         "date":          date_str,
         "benchmark_chg": _f(benchmark_chg),
         "layers":        layers_out,
+        "social_buzz":   buzz or {},
     }
 
     docs_dir = Path(__file__).parent / "docs"
@@ -176,19 +181,24 @@ def run(date_str: str, skip_intraday: bool = False) -> dict:
     report_path = save_report(report_md, date_str)
     logger.info("Report → %s", report_path)
 
+    # ── Step 6: Social buzz ───────────────────────────────────────────────────
+    logger.info("=== Step 6: Social buzz ===")
+    buzz = build_buzz(all_tickers, ticker_labels, ticker_to_layer)
+
     # ── Step 7: Generate web data.json ───────────────────────────────────────
-    logger.info("=== Step 6: Web data.json ===")
-    _save_web_data(analysis, benchmark_chg, date_str)
+    logger.info("=== Step 7: Web data.json ===")
+    _save_web_data(analysis, benchmark_chg, date_str, buzz)
 
     # ── Step 8: Telegram notification ────────────────────────────────────────
-    logger.info("=== Step 7: Telegram ===")
-    send_notification(analysis, benchmark_chg, date_str, report_path)
+    logger.info("=== Step 8: Telegram ===")
+    send_notification(analysis, benchmark_chg, date_str, report_path, buzz)
 
     return {
         "snapshot":      snapshot,
         "analysis":      analysis,
         "benchmark_chg": benchmark_chg,
         "report_path":   report_path,
+        "buzz":          buzz,
     }
 
 

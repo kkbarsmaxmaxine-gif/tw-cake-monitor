@@ -89,7 +89,7 @@ def _pct(v) -> str:
         return "N/A"
 
 
-def build_message(analysis: dict, benchmark_chg: float | None, date_str: str) -> str:
+def build_message(analysis: dict, benchmark_chg: float | None, date_str: str, buzz: dict | None = None) -> str:
     layer_perf = analysis.get("layer_perf")
     narrative  = analysis.get("narrative", {})
     snapshot   = analysis.get("snapshot")
@@ -143,6 +143,20 @@ def build_message(analysis: dict, benchmark_chg: float | None, date_str: str) ->
                     f"{_pct(row['change_pct'])} (+{rs:.2f}% vs 本層)"
                 )
 
+    # Social buzz top 5
+    if buzz and buzz.get("top5"):
+        sources = "+".join(buzz.get("sources", []))
+        lines.append(f"\n🔥 社群熱度 Top 5 ({sources})")
+        for item in buzz["top5"]:
+            name  = item.get("display_name", item.get("ticker", ""))
+            total = item.get("total", 0)
+            breakdown = "  ".join(
+                f"{k[0].upper()}:{item[k]}"
+                for k in ("ptt", "youtube", "news")
+                if item.get(k, 0) > 0
+            )
+            lines.append(f"  {name}  {total} 則" + (f"  ({breakdown})" if breakdown else ""))
+
     lines.append("\n詳見 output/ 報告")
     return "\n".join(lines)
 
@@ -152,6 +166,7 @@ def send_notification(
     benchmark_chg: float | None,
     date_str:      str,
     report_path:   Path | None = None,
+    buzz:          dict | None = None,
 ) -> None:
     token   = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
@@ -160,7 +175,7 @@ def send_notification(
         logger.info("Telegram not configured (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set)")
         return
 
-    msg = build_message(analysis, benchmark_chg, date_str)
+    msg = build_message(analysis, benchmark_chg, date_str, buzz)
     ok  = _post(token, "sendMessage", {
         "chat_id": chat_id,
         "text":    msg,
