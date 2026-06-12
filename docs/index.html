@@ -243,6 +243,51 @@
   #tooltip .tt-row span:last-child { color: #cbd5e1; }
   #tooltip hr { border: none; border-top: 1px solid #334155; margin: 7px 0; }
 
+  /* ── Data quality ── */
+  #dq-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .dq-ok      { background: rgba(56,189,248,.12); color: #38bdf8; }
+  .dq-warning { background: rgba(251,191,36,.12); color: #fbbf24; }
+  .dq-error   { background: rgba(248,113,113,.12);color: #f87171; }
+  .dq-unknown { background: rgba(100,116,139,.12);color: #64748b; }
+  #dq-wrapper { position: relative; }
+  #dq-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 200;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-width: 340px;
+    max-width: 480px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.6);
+    font-size: 0.78rem;
+  }
+  #dq-panel.open { display: block; }
+  .dq-issue-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 4px 0;
+    border-bottom: 1px solid #334155;
+    color: #94a3b8;
+    line-height: 1.4;
+  }
+  .dq-issue-row:last-child { border: none; }
+  .dq-level { font-weight: 700; min-width: 44px; }
+  .dq-level.err  { color: #f87171; }
+  .dq-level.warn { color: #fbbf24; }
+  .dq-ticker { color: #38bdf8; min-width: 56px; }
+
   /* ── Responsive ── */
   @media (max-width: 720px) {
     .main { grid-template-columns: 1fr; }
@@ -257,6 +302,14 @@
   <div class="header-logo">🌊 <span>台股</span>板塊輪動</div>
   <span id="date-label">載入中…</span>
   <span id="bm-label"></span>
+  <div id="dq-wrapper" style="margin-left:8px">
+    <span id="dq-badge" class="dq-unknown" onclick="toggleDQ()">⬤ 資料品質</span>
+    <div id="dq-panel">
+      <div style="font-weight:600;margin-bottom:8px;color:#e2e8f0">資料品質檢核</div>
+      <div id="dq-summary" style="color:#94a3b8;margin-bottom:8px;font-size:.75rem"></div>
+      <div id="dq-issues"></div>
+    </div>
+  </div>
 </header>
 
 <div class="toolbar">
@@ -478,8 +531,39 @@ Promise.all([
         </div>`;
       list.appendChild(card);
     });
+  // ── Data quality badge ────────────────────────────────────────────────────
+  const dq = data.data_quality || {};
+  const dqBadge   = document.getElementById('dq-badge');
+  const dqSummary = document.getElementById('dq-summary');
+  const dqIssues  = document.getElementById('dq-issues');
+  const statusMap = { ok: ['dq-ok', '✅ 資料正常'], warning: ['dq-warning', '⚠️ 資料警告'], error: ['dq-error', '❌ 資料異常'], unknown: ['dq-unknown', '⬤ 資料品質'] };
+  const [, dqLabel] = statusMap[dq.status] || statusMap.unknown;
+  dqBadge.className = 'dq-' + (dq.status || 'unknown');
+  dqBadge.textContent = dqLabel;
+  dqSummary.textContent = (dq.summary || '') + (dq.checked_at ? '  ·  ' + dq.checked_at.replace('T',' ').slice(0,16) + ' UTC' : '');
+  (dq.issues || []).forEach(issue => {
+    const row = document.createElement('div');
+    row.className = 'dq-issue-row';
+    const lvlCls = issue.level === 'error' ? 'err' : 'warn';
+    const icon   = issue.level === 'error' ? '❌' : '⚠️';
+    const ticker = issue.ticker ? `<span class="dq-ticker">${issue.ticker}</span>` : '<span class="dq-ticker" style="color:#64748b">—</span>';
+    row.innerHTML = `<span class="dq-level ${lvlCls}">${icon}</span>${ticker}<span>${issue.detail}</span>`;
+    dqIssues.appendChild(row);
+  });
+  if (!(dq.issues || []).length) {
+    dqIssues.innerHTML = '<div style="color:#10b981;font-size:.75rem">所有檢核項目通過</div>';
+  }
+
 }).catch(err => {
   document.getElementById('date-label').textContent = '資料載入失敗: ' + err.message;
+});
+
+function toggleDQ() {
+  document.getElementById('dq-panel').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  const w = document.getElementById('dq-wrapper');
+  if (w && !w.contains(e.target)) document.getElementById('dq-panel').classList.remove('open');
 });
 </script>
 </body>

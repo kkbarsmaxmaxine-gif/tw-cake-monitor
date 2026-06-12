@@ -30,6 +30,7 @@ from analyzer import build_full_analysis
 from reporter import generate_report, print_terminal_summary, save_report
 from notifier import send_notification
 from social_fetcher import build_buzz
+from validator import validate
 
 
 def _setup_logging(level: str) -> logging.Logger:
@@ -41,7 +42,7 @@ def _setup_logging(level: str) -> logging.Logger:
     return logging.getLogger("main")
 
 
-def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str, buzz: dict | None = None) -> None:
+def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str, buzz: dict | None = None, data_quality: dict | None = None) -> None:
     """Write docs/data.json for the bubble-chart web dashboard."""
     import math
 
@@ -92,6 +93,7 @@ def _save_web_data(analysis: dict, benchmark_chg: float | None, date_str: str, b
         "benchmark_chg": _f(benchmark_chg),
         "layers":        layers_out,
         "social_buzz":   buzz or {},
+        "data_quality":  data_quality or {"status": "unknown", "summary": "Not run", "issues": []},
     }
 
     docs_dir = Path(__file__).parent / "docs"
@@ -184,6 +186,11 @@ def run(date_str: str, skip_intraday: bool = False) -> dict:
 
     logger.info("Snapshot: %d tickers", len(snapshot))
 
+    # ── Step 4b: Data quality validation ─────────────────────────────────────
+    logger.info("=== Step 3b: Data quality validation ===")
+    dq = validate(stock_daily, snapshot, all_tickers, date_str)
+    logger.info("Data quality: %s — %s", dq["status"].upper(), dq["summary"])
+
     # ── Step 5: Analysis ──────────────────────────────────────────────────────
     logger.info("=== Step 4: Analysis ===")
     analysis = build_full_analysis(snapshot)
@@ -202,7 +209,7 @@ def run(date_str: str, skip_intraday: bool = False) -> dict:
 
     # ── Step 7: Generate web data.json ───────────────────────────────────────
     logger.info("=== Step 7: Web data.json ===")
-    _save_web_data(analysis, benchmark_chg, date_str, buzz)
+    _save_web_data(analysis, benchmark_chg, date_str, buzz, dq)
 
     # ── Step 8: Telegram notification ────────────────────────────────────────
     logger.info("=== Step 8: Telegram ===")
