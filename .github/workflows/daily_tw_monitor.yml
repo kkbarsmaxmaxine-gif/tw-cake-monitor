@@ -74,16 +74,19 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           DATE=${{ steps.monitor.outputs.date }}
-          REPORT="output/tw_cake_monitor_${DATE}.md"
 
-          # Sync with remote before staging so push never gets rejected
-          git pull origin main
-
-          git add output/*.md docs/data.json
+          git add -A output/ docs/data.json
 
           if git diff --cached --quiet; then
             echo "Nothing to commit (report unchanged)."
-          else
-            git commit -m "chore: daily TW cake monitor report ${DATE}"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: daily TW cake monitor report ${DATE}"
+
+          # Retry push up to 3 times; rebase on rejection
+          for i in 1 2 3; do
+            git push origin main && break
+            echo "Push attempt $i rejected — rebasing and retrying…"
+            git pull --rebase origin main
+          done
