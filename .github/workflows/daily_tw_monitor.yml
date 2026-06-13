@@ -61,10 +61,11 @@ jobs:
 
       # ── 4. Upload report as workflow artifact ─────────────────────────────────
       - name: Upload report artifact
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: tw-cake-monitor-${{ steps.monitor.outputs.date }}
-          path: output/tw_cake_monitor_${{ steps.monitor.outputs.date }}.md
+          path: output/
           retention-days: 30
 
       # ── 5. Commit report back to repo ────────────────────────────────────────
@@ -75,7 +76,17 @@ jobs:
 
           DATE=${{ steps.monitor.outputs.date }}
 
+          echo "--- output/ contents ---"
+          ls -la output/ || echo "(output/ missing)"
+          echo "--- docs/ contents ---"
+          ls -la docs/ || echo "(docs/ missing)"
+          echo "--- git status ---"
+          git status
+
           git add -A
+
+          echo "--- git status after add ---"
+          git status
 
           if git diff --cached --quiet; then
             echo "Nothing to commit (report unchanged)."
