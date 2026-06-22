@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T05:34:32.708256Z",
+  "updated_at": "2026-06-22T05:42:26.180607Z",
   "sources": [
     "youtube",
     "news"
@@ -16,146 +16,146 @@
     "2454.TW": {
       "display_name": "聯發科",
       "ptt": 0,
-      "youtube": 50,
-      "news": 8,
-      "total": 58,
-      "score": 166.0
+      "youtube": 28,
+      "news": 4,
+      "total": 32,
+      "score": 92.0
     },
     "2303.TW": {
       "display_name": "聯電",
       "ptt": 0,
-      "youtube": 41,
-      "news": 1,
-      "total": 42,
-      "score": 125.0
+      "youtube": 21,
+      "news": 5,
+      "total": 26,
+      "score": 73.0
     },
     "3661.TW": {
       "display_name": "世芯",
       "ptt": 0,
-      "youtube": 21,
+      "youtube": 4,
       "news": 0,
-      "total": 21,
-      "score": 63.0
+      "total": 4,
+      "score": 12.0
     },
     "3443.TW": {
       "display_name": "創意",
       "ptt": 0,
-      "youtube": 29,
+      "youtube": 12,
       "news": 1,
-      "total": 30,
-      "score": 89.0
+      "total": 13,
+      "score": 38.0
     },
     "2317.TW": {
       "display_name": "鴻海",
       "ptt": 0,
-      "youtube": 50,
-      "news": 3,
-      "total": 53,
-      "score": 156.0
+      "youtube": 24,
+      "news": 5,
+      "total": 29,
+      "score": 82.0
     },
     "2382.TW": {
       "display_name": "廣達",
       "ptt": 0,
-      "youtube": 50,
+      "youtube": 19,
       "news": 1,
-      "total": 51,
-      "score": 152.0
+      "total": 20,
+      "score": 59.0
     },
     "6669.TW": {
       "display_name": "緯穎",
       "ptt": 0,
-      "youtube": 9,
-      "news": 8,
-      "total": 17,
-      "score": 43.0
+      "youtube": 4,
+      "news": 5,
+      "total": 9,
+      "score": 22.0
     },
     "2356.TW": {
       "display_name": "英業達",
       "ptt": 0,
-      "youtube": 11,
-      "news": 5,
-      "total": 16,
-      "score": 43.0
+      "youtube": 8,
+      "news": 3,
+      "total": 11,
+      "score": 30.0
     },
     "3231.TW": {
       "display_name": "緯創",
       "ptt": 0,
-      "youtube": 28,
-      "news": 1,
-      "total": 29,
-      "score": 86.0
+      "youtube": 9,
+      "news": 2,
+      "total": 11,
+      "score": 31.0
     },
     "2408.TW": {
       "display_name": "南亞科",
       "ptt": 0,
-      "youtube": 50,
-      "news": 24,
-      "total": 74,
-      "score": 198.0
+      "youtube": 16,
+      "news": 20,
+      "total": 36,
+      "score": 88.0
     },
     "2344.TW": {
       "display_name": "華邦電",
       "ptt": 0,
-      "youtube": 50,
-      "news": 18,
-      "total": 68,
-      "score": 186.0
+      "youtube": 14,
+      "news": 13,
+      "total": 27,
+      "score": 68.0
     },
     "2337.TW": {
       "display_name": "旺宏",
       "ptt": 0,
-      "youtube": 26,
-      "news": 0,
-      "total": 26,
-      "score": 78.0
+      "youtube": 8,
+      "news": 3,
+      "total": 11,
+      "score": 30.0
     },
     "8046.TW": {
       "display_name": "南電",
       "ptt": 0,
-      "youtube": 41,
+      "youtube": 24,
       "news": 1,
-      "total": 42,
-      "score": 125.0
+      "total": 25,
+      "score": 74.0
     },
     "5269.TW": {
       "display_name": "祥碩",
       "ptt": 0,
-      "youtube": 1,
+      "youtube": 0,
       "news": 1,
-      "total": 2,
-      "score": 5.0
+      "total": 1,
+      "score": 2.0
     },
     "3711.TW": {
       "display_name": "日月光投控",
       "ptt": 0,
-      "youtube": 10,
-      "news": 1,
-      "total": 11,
-      "score": 32.0
+      "youtube": 0,
+      "news": 6,
+      "total": 6,
+      "score": 12.0
     },
     "8150.TW": {
       "display_name": "南茂",
       "ptt": 0,
-      "youtube": 18,
+      "youtube": 6,
       "news": 0,
-      "total": 18,
-      "score": 54.0
+      "total": 6,
+      "score": 18.0
     },
     "2449.TW": {
       "display_name": "京元電子",
       "ptt": 0,
-      "youtube": 11,
-      "news": 10,
-      "total": 21,
-      "score": 53.0
+      "youtube": 2,
+      "news": 6,
+      "total": 8,
+      "score": 18.0
     },
     "2329.TW": {
       "display_name": "華泰",
       "ptt": 0,
-      "youtube": 3,
+      "youtube": 2,
       "news": 2,
-      "total": 5,
-      "score": 13.0
+      "total": 4,
+      "score": 10.0
     },
     "2369.TW": {
       "display_name": "菱生精密",
@@ -168,90 +168,90 @@
     "2404.TW": {
       "display_name": "漢唐",
       "ptt": 0,
-      "youtube": 8,
+      "youtube": 3,
       "news": 1,
-      "total": 9,
-      "score": 26.0
+      "total": 4,
+      "score": 11.0
     },
     "6139.TW": {
       "display_name": "亞翔",
-      "ptt": 0,
-      "youtube": 7,
-      "news": 1,
-      "total": 8,
-      "score": 23.0
-    },
-    "6196.TW": {
-      "display_name": "帆宣",
-      "ptt": 0,
-      "youtube": 6,
-      "news": 11,
-      "total": 17,
-      "score": 40.0
-    },
-    "5434.TW": {
-      "display_name": "崇越科",
-      "ptt": 0,
-      "youtube": 1,
-      "news": 0,
-      "total": 1,
-      "score": 3.0
-    },
-    "6271.TW": {
-      "display_name": "同欣電",
       "ptt": 0,
       "youtube": 5,
       "news": 1,
       "total": 6,
       "score": 17.0
     },
+    "6196.TW": {
+      "display_name": "帆宣",
+      "ptt": 0,
+      "youtube": 4,
+      "news": 9,
+      "total": 13,
+      "score": 30.0
+    },
+    "5434.TW": {
+      "display_name": "崇越科",
+      "ptt": 0,
+      "youtube": 0,
+      "news": 0,
+      "total": 0,
+      "score": 0.0
+    },
+    "6271.TW": {
+      "display_name": "同欣電",
+      "ptt": 0,
+      "youtube": 3,
+      "news": 1,
+      "total": 4,
+      "score": 11.0
+    },
     "2308.TW": {
       "display_name": "台達電",
       "ptt": 0,
-      "youtube": 50,
-      "news": 14,
-      "total": 64,
-      "score": 178.0
+      "youtube": 41,
+      "news": 15,
+      "total": 56,
+      "score": 153.0
     },
     "2301.TW": {
       "display_name": "光寶科",
       "ptt": 0,
-      "youtube": 35,
+      "youtube": 21,
       "news": 1,
-      "total": 36,
-      "score": 107.0
+      "total": 22,
+      "score": 65.0
     },
     "3044.TW": {
       "display_name": "健策",
       "ptt": 0,
-      "youtube": 3,
+      "youtube": 2,
       "news": 0,
-      "total": 3,
-      "score": 9.0
+      "total": 2,
+      "score": 6.0
     },
     "3017.TW": {
       "display_name": "奇鋐",
       "ptt": 0,
-      "youtube": 10,
-      "news": 4,
-      "total": 14,
-      "score": 38.0
+      "youtube": 5,
+      "news": 7,
+      "total": 12,
+      "score": 29.0
     },
     "2421.TW": {
       "display_name": "建準",
       "ptt": 0,
-      "youtube": 31,
-      "news": 6,
-      "total": 37,
-      "score": 105.0
+      "youtube": 21,
+      "news": 8,
+      "total": 29,
+      "score": 79.0
     },
     "6230.TW": {
       "display_name": "超眾",
       "ptt": 0,
       "youtube": 9,
-      "news": 3,
-      "total": 12,
-      "score": 33.0
+      "news": 1,
+      "total": 10,
+      "score": 29.0
     },
     "3338.TW": {
       "display_name": "泰碩",
@@ -264,10 +264,10 @@
     "3653.TW": {
       "display_name": "健策精",
       "ptt": 0,
-      "youtube": 2,
-      "news": 0,
+      "youtube": 1,
+      "news": 1,
       "total": 2,
-      "score": 6.0
+      "score": 5.0
     },
     "3043.TW": {
       "display_name": "健鼎",
@@ -280,423 +280,423 @@
     "2059.TW": {
       "display_name": "川湖",
       "ptt": 0,
-      "youtube": 3,
-      "news": 0,
-      "total": 3,
-      "score": 9.0
+      "youtube": 4,
+      "news": 4,
+      "total": 8,
+      "score": 20.0
     },
     "2345.TW": {
       "display_name": "智邦",
-      "ptt": 0,
-      "youtube": 10,
-      "news": 0,
-      "total": 10,
-      "score": 30.0
-    },
-    "6285.TW": {
-      "display_name": "啟碁",
-      "ptt": 0,
-      "youtube": 4,
-      "news": 3,
-      "total": 7,
-      "score": 18.0
-    },
-    "4977.TW": {
-      "display_name": "眾達-KY",
-      "ptt": 0,
-      "youtube": 3,
-      "news": 1,
-      "total": 4,
-      "score": 11.0
-    },
-    "3380.TW": {
-      "display_name": "明泰",
-      "ptt": 0,
-      "youtube": 9,
-      "news": 3,
-      "total": 12,
-      "score": 33.0
-    },
-    "2332.TW": {
-      "display_name": "友訊",
-      "ptt": 0,
-      "youtube": 27,
-      "news": 0,
-      "total": 27,
-      "score": 81.0
-    },
-    "2393.TW": {
-      "display_name": "億光",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 11,
-      "total": 61,
-      "score": 172.0
-    },
-    "3450.TW": {
-      "display_name": "聯鈞",
-      "ptt": 0,
-      "youtube": 23,
-      "news": 1,
-      "total": 24,
-      "score": 71.0
-    },
-    "6177.TW": {
-      "display_name": "台灣精銳",
-      "ptt": 0,
-      "youtube": 0,
-      "news": 10,
-      "total": 10,
-      "score": 20.0
-    },
-    "6243.TW": {
-      "display_name": "精材",
-      "ptt": 0,
-      "youtube": 16,
-      "news": 0,
-      "total": 16,
-      "score": 48.0
-    },
-    "3030.TW": {
-      "display_name": "科佳",
-      "ptt": 0,
-      "youtube": 28,
-      "news": 3,
-      "total": 31,
-      "score": 90.0
-    },
-    "2327.TW": {
-      "display_name": "國巨",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 0,
-      "total": 50,
-      "score": 150.0
-    },
-    "2492.TW": {
-      "display_name": "華新科",
-      "ptt": 0,
-      "youtube": 30,
-      "news": 0,
-      "total": 30,
-      "score": 90.0
-    },
-    "2375.TW": {
-      "display_name": "智寶",
-      "ptt": 0,
-      "youtube": 11,
-      "news": 1,
-      "total": 12,
-      "score": 35.0
-    },
-    "6112.TW": {
-      "display_name": "聚鼎",
-      "ptt": 0,
-      "youtube": 6,
-      "news": 0,
-      "total": 6,
-      "score": 18.0
-    },
-    "2478.TW": {
-      "display_name": "大毅",
-      "ptt": 0,
-      "youtube": 16,
-      "news": 2,
-      "total": 18,
-      "score": 52.0
-    },
-    "8261.TW": {
-      "display_name": "富鼎",
-      "ptt": 0,
-      "youtube": 25,
-      "news": 6,
-      "total": 31,
-      "score": 87.0
-    },
-    "2481.TW": {
-      "display_name": "強茂",
-      "ptt": 0,
-      "youtube": 0,
-      "news": 2,
-      "total": 2,
-      "score": 4.0
-    },
-    "3046.TW": {
-      "display_name": "尼克森",
-      "ptt": 0,
-      "youtube": 11,
-      "news": 0,
-      "total": 11,
-      "score": 33.0
-    },
-    "3014.TW": {
-      "display_name": "聯陽",
-      "ptt": 0,
-      "youtube": 14,
-      "news": 0,
-      "total": 14,
-      "score": 42.0
-    },
-    "6443.TW": {
-      "display_name": "元晶",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 1,
-      "total": 51,
-      "score": 152.0
-    },
-    "2049.TW": {
-      "display_name": "上銀",
-      "ptt": 0,
-      "youtube": 0,
-      "news": 0,
-      "total": 0,
-      "score": 0.0
-    },
-    "2395.TW": {
-      "display_name": "研華",
-      "ptt": 0,
-      "youtube": 0,
-      "news": 0,
-      "total": 0,
-      "score": 0.0
-    },
-    "1504.TW": {
-      "display_name": "東元",
-      "ptt": 0,
-      "youtube": 0,
-      "news": 0,
-      "total": 0,
-      "score": 0.0
-    },
-    "2453.TW": {
-      "display_name": "盟立",
       "ptt": 0,
       "youtube": 5,
       "news": 0,
       "total": 5,
       "score": 15.0
     },
+    "6285.TW": {
+      "display_name": "啟碁",
+      "ptt": 0,
+      "youtube": 0,
+      "news": 3,
+      "total": 3,
+      "score": 6.0
+    },
+    "4977.TW": {
+      "display_name": "眾達-KY",
+      "ptt": 0,
+      "youtube": 1,
+      "news": 1,
+      "total": 2,
+      "score": 5.0
+    },
+    "3380.TW": {
+      "display_name": "明泰",
+      "ptt": 0,
+      "youtube": 2,
+      "news": 0,
+      "total": 2,
+      "score": 6.0
+    },
+    "2332.TW": {
+      "display_name": "友訊",
+      "ptt": 0,
+      "youtube": 10,
+      "news": 0,
+      "total": 10,
+      "score": 30.0
+    },
+    "2393.TW": {
+      "display_name": "億光",
+      "ptt": 0,
+      "youtube": 50,
+      "news": 9,
+      "total": 59,
+      "score": 168.0
+    },
+    "3450.TW": {
+      "display_name": "聯鈞",
+      "ptt": 0,
+      "youtube": 2,
+      "news": 1,
+      "total": 3,
+      "score": 8.0
+    },
+    "6177.TW": {
+      "display_name": "台灣精銳",
+      "ptt": 0,
+      "youtube": 0,
+      "news": 8,
+      "total": 8,
+      "score": 16.0
+    },
+    "6243.TW": {
+      "display_name": "精材",
+      "ptt": 0,
+      "youtube": 5,
+      "news": 0,
+      "total": 5,
+      "score": 15.0
+    },
+    "3030.TW": {
+      "display_name": "科佳",
+      "ptt": 0,
+      "youtube": 10,
+      "news": 2,
+      "total": 12,
+      "score": 34.0
+    },
+    "2327.TW": {
+      "display_name": "國巨",
+      "ptt": 0,
+      "youtube": 15,
+      "news": 0,
+      "total": 15,
+      "score": 45.0
+    },
+    "2492.TW": {
+      "display_name": "華新科",
+      "ptt": 0,
+      "youtube": 5,
+      "news": 2,
+      "total": 7,
+      "score": 19.0
+    },
+    "2375.TW": {
+      "display_name": "智寶",
+      "ptt": 0,
+      "youtube": 8,
+      "news": 3,
+      "total": 11,
+      "score": 30.0
+    },
+    "6112.TW": {
+      "display_name": "聚鼎",
+      "ptt": 0,
+      "youtube": 1,
+      "news": 0,
+      "total": 1,
+      "score": 3.0
+    },
+    "2478.TW": {
+      "display_name": "大毅",
+      "ptt": 0,
+      "youtube": 6,
+      "news": 2,
+      "total": 8,
+      "score": 22.0
+    },
+    "8261.TW": {
+      "display_name": "富鼎",
+      "ptt": 0,
+      "youtube": 13,
+      "news": 6,
+      "total": 19,
+      "score": 51.0
+    },
+    "2481.TW": {
+      "display_name": "強茂",
+      "ptt": 0,
+      "youtube": 11,
+      "news": 2,
+      "total": 13,
+      "score": 37.0
+    },
+    "3046.TW": {
+      "display_name": "尼克森",
+      "ptt": 0,
+      "youtube": 1,
+      "news": 0,
+      "total": 1,
+      "score": 3.0
+    },
+    "3014.TW": {
+      "display_name": "聯陽",
+      "ptt": 0,
+      "youtube": 3,
+      "news": 0,
+      "total": 3,
+      "score": 9.0
+    },
+    "6443.TW": {
+      "display_name": "元晶",
+      "ptt": 0,
+      "youtube": 23,
+      "news": 2,
+      "total": 25,
+      "score": 73.0
+    },
+    "2049.TW": {
+      "display_name": "上銀",
+      "ptt": 0,
+      "youtube": 25,
+      "news": 0,
+      "total": 25,
+      "score": 75.0
+    },
+    "2395.TW": {
+      "display_name": "研華",
+      "ptt": 0,
+      "youtube": 0,
+      "news": 2,
+      "total": 2,
+      "score": 4.0
+    },
+    "1504.TW": {
+      "display_name": "東元",
+      "ptt": 0,
+      "youtube": 2,
+      "news": 0,
+      "total": 2,
+      "score": 6.0
+    },
+    "2453.TW": {
+      "display_name": "盟立",
+      "ptt": 0,
+      "youtube": 2,
+      "news": 0,
+      "total": 2,
+      "score": 6.0
+    },
     "1597.TW": {
       "display_name": "直得",
       "ptt": 0,
       "youtube": 50,
-      "news": 3,
-      "total": 53,
-      "score": 156.0
+      "news": 1,
+      "total": 51,
+      "score": 152.0
     },
     "2357.TW": {
       "display_name": "華碩",
       "ptt": 0,
-      "youtube": 6,
-      "news": 14,
-      "total": 20,
-      "score": 46.0
+      "youtube": 1,
+      "news": 15,
+      "total": 16,
+      "score": 33.0
     },
     "2353.TW": {
       "display_name": "宏碁",
       "ptt": 0,
-      "youtube": 6,
+      "youtube": 3,
       "news": 5,
-      "total": 11,
-      "score": 28.0
+      "total": 8,
+      "score": 19.0
     },
     "2376.TW": {
       "display_name": "技嘉",
       "ptt": 0,
-      "youtube": 3,
+      "youtube": 1,
       "news": 1,
-      "total": 4,
-      "score": 11.0
+      "total": 2,
+      "score": 5.0
     },
     "2377.TW": {
       "display_name": "微星",
       "ptt": 0,
-      "youtube": 3,
+      "youtube": 1,
       "news": 21,
-      "total": 24,
-      "score": 51.0
+      "total": 22,
+      "score": 45.0
     },
     "4938.TW": {
       "display_name": "和碩",
       "ptt": 0,
-      "youtube": 0,
+      "youtube": 7,
       "news": 0,
-      "total": 0,
-      "score": 0.0
+      "total": 7,
+      "score": 21.0
     },
     "2314.TW": {
       "display_name": "台揚",
       "ptt": 0,
-      "youtube": 50,
+      "youtube": 32,
       "news": 0,
-      "total": 50,
-      "score": 150.0
+      "total": 32,
+      "score": 96.0
     },
     "3596.TW": {
       "display_name": "智易",
       "ptt": 0,
-      "youtube": 0,
+      "youtube": 7,
       "news": 1,
-      "total": 1,
-      "score": 2.0
+      "total": 8,
+      "score": 23.0
     },
     "3062.TW": {
       "display_name": "建漢",
       "ptt": 0,
-      "youtube": 0,
-      "news": 4,
-      "total": 4,
-      "score": 8.0
+      "youtube": 5,
+      "news": 0,
+      "total": 5,
+      "score": 15.0
     },
     "3045.TW": {
       "display_name": "台灣大",
       "ptt": 0,
-      "youtube": 0,
+      "youtube": 50,
       "news": 1,
-      "total": 1,
-      "score": 2.0
+      "total": 51,
+      "score": 152.0
     },
     "2412.TW": {
       "display_name": "中華電",
       "ptt": 0,
-      "youtube": 0,
+      "youtube": 2,
       "news": 17,
-      "total": 17,
-      "score": 34.0
+      "total": 19,
+      "score": 40.0
     }
   },
   "by_layer": {
     "chip_foundry": {
-      "total": 207,
-      "score": 605.0,
-      "top_ticker": "聯發科",
-      "top_score": 166.0
+      "total": 131,
+      "score": 377.0,
+      "top_ticker": "台積電",
+      "top_score": 162.0
     },
     "ai_server": {
-      "total": 166,
-      "score": 480.0,
+      "total": 80,
+      "score": 224.0,
       "top_ticker": "鴻海",
-      "top_score": 156.0
+      "top_score": 82.0
     },
     "memory": {
-      "total": 212,
-      "score": 592.0,
+      "total": 100,
+      "score": 262.0,
       "top_ticker": "南亞科",
-      "top_score": 198.0
+      "top_score": 88.0
     },
     "adv_packaging": {
-      "total": 57,
-      "score": 156.0,
+      "total": 26,
+      "score": 62.0,
       "top_ticker": "南茂",
-      "top_score": 54.0
+      "top_score": 18.0
     },
     "facility": {
-      "total": 41,
-      "score": 109.0,
+      "total": 27,
+      "score": 69.0,
       "top_ticker": "帆宣",
-      "top_score": 40.0
+      "top_score": 30.0
     },
     "power_thermal": {
-      "total": 154,
-      "score": 437.0,
+      "total": 121,
+      "score": 332.0,
       "top_ticker": "台達電",
-      "top_score": 178.0
+      "top_score": 153.0
     },
     "liquid_cooling": {
-      "total": 69,
-      "score": 203.0,
+      "total": 72,
+      "score": 209.0,
       "top_ticker": "泰碩",
       "top_score": 150.0
     },
     "networking": {
-      "total": 60,
-      "score": 173.0,
+      "total": 22,
+      "score": 62.0,
       "top_ticker": "友訊",
-      "top_score": 81.0
+      "top_score": 30.0
     },
     "optical": {
-      "total": 142,
-      "score": 401.0,
+      "total": 87,
+      "score": 241.0,
       "top_ticker": "億光",
-      "top_score": 172.0
+      "top_score": 168.0
     },
     "passive_components": {
-      "total": 116,
-      "score": 345.0,
+      "total": 42,
+      "score": 119.0,
       "top_ticker": "國巨",
-      "top_score": 150.0
+      "top_score": 45.0
     },
     "power_devices": {
-      "total": 109,
-      "score": 318.0,
+      "total": 61,
+      "score": 173.0,
       "top_ticker": "元晶",
-      "top_score": 152.0
+      "top_score": 73.0
     },
     "robotics": {
-      "total": 58,
-      "score": 171.0,
+      "total": 82,
+      "score": 243.0,
       "top_ticker": "直得",
-      "top_score": 156.0
+      "top_score": 152.0
     },
     "aipc": {
-      "total": 59,
-      "score": 136.0,
+      "total": 55,
+      "score": 123.0,
       "top_ticker": "微星",
-      "top_score": 51.0
+      "top_score": 45.0
     },
     "satellite": {
-      "total": 73,
-      "score": 196.0,
-      "top_ticker": "台揚",
-      "top_score": 150.0
+      "total": 115,
+      "score": 326.0,
+      "top_ticker": "台灣大",
+      "top_score": 152.0
     }
   },
   "top5": [
-    {
-      "ticker": "2408.TW",
-      "display_name": "南亞科",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 24,
-      "total": 74,
-      "score": 198.0
-    },
-    {
-      "ticker": "2344.TW",
-      "display_name": "華邦電",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 18,
-      "total": 68,
-      "score": 186.0
-    },
-    {
-      "ticker": "2308.TW",
-      "display_name": "台達電",
-      "ptt": 0,
-      "youtube": 50,
-      "news": 14,
-      "total": 64,
-      "score": 178.0
-    },
     {
       "ticker": "2393.TW",
       "display_name": "億光",
       "ptt": 0,
       "youtube": 50,
-      "news": 11,
-      "total": 61,
-      "score": 172.0
+      "news": 9,
+      "total": 59,
+      "score": 168.0
     },
     {
-      "ticker": "2454.TW",
-      "display_name": "聯發科",
+      "ticker": "2330.TW",
+      "display_name": "台積電",
       "ptt": 0,
       "youtube": 50,
-      "news": 8,
-      "total": 58,
-      "score": 166.0
+      "news": 6,
+      "total": 56,
+      "score": 162.0
+    },
+    {
+      "ticker": "2308.TW",
+      "display_name": "台達電",
+      "ptt": 0,
+      "youtube": 41,
+      "news": 15,
+      "total": 56,
+      "score": 153.0
+    },
+    {
+      "ticker": "1597.TW",
+      "display_name": "直得",
+      "ptt": 0,
+      "youtube": 50,
+      "news": 1,
+      "total": 51,
+      "score": 152.0
+    },
+    {
+      "ticker": "3045.TW",
+      "display_name": "台灣大",
+      "ptt": 0,
+      "youtube": 50,
+      "news": 1,
+      "total": 51,
+      "score": 152.0
     }
   ]
 }
