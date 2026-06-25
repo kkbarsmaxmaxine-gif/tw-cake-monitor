@@ -1,6 +1,7 @@
 """
-tw_cake_monitor/config.py – 台股 AI + 機器人輪動監控設定（14 層）
+tw_cake_monitor/config.py – 台股 AI + 機器人輪動監控設定（15 層）
 整合 Tide (tide-tw.app) 族群架構與標的
+新增 AI 電力地圖：重電/電網（Layer 3）+ SiC 補強（power_devices）
 """
 from __future__ import annotations
 from pathlib import Path
@@ -145,16 +146,30 @@ LAYERS: dict[str, dict] = {
         },
     },
     "power_devices": {
-        "label": "🔋 功率/類比IC",
+        "label": "🔋 功率/類比IC/SiC",
         "cake_layer": 3,
-        # Tide: 類比與功率IC + 第三代半導體
-        "tickers": ["8261.TW", "2481.TW", "3046.TW", "3014.TW", "6443.TW"],
+        # Tide: 類比與功率IC + 第三代半導體（SiC）
+        # 6488.TWO=環球晶(上櫃)、3707.TWO=漢磊(上櫃)
+        "tickers": ["8261.TW", "2481.TW", "6488.TWO", "3707.TWO", "3014.TW"],
         "ticker_labels": {
-            "8261.TW": "富鼎",
-            "2481.TW": "強茂",
-            "3046.TW": "尼克森",
-            "3014.TW": "聯陽",
-            "6443.TW": "元晶",
+            "8261.TW":  "富鼎",
+            "2481.TW":  "強茂",
+            "6488.TWO": "環球晶",
+            "3707.TWO": "漢磊",
+            "3014.TW":  "聯陽",
+        },
+    },
+    "heavy_elec": {
+        "label": "🏭 重電/電網",
+        "cake_layer": 3,
+        # AI電力地圖：變壓器、GIS、配電設備；訂單能見度至2030
+        "tickers": ["1519.TW", "1513.TW", "1503.TW", "1514.TW", "2371.TW"],
+        "ticker_labels": {
+            "1519.TW": "華城",
+            "1513.TW": "中興電",
+            "1503.TW": "士電",
+            "1514.TW": "亞力",
+            "2371.TW": "大同",
         },
     },
 
