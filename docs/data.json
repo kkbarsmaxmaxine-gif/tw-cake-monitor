@@ -1,52 +1,172 @@
 {
-  "date": "20260629",
-  "benchmark_chg": 0.96,
+  "date": "20260630",
+  "benchmark_chg": 2.5,
   "layers": [
     {
-      "layer_id": "facility",
-      "label": "🏗️ 廠務工程",
-      "cake_layer": 2,
-      "avg_change": 3.15,
-      "avg_vol_ratio": 1.66,
-      "best_ticker": "崇越科",
+      "layer_id": "passive_components",
+      "label": "🔩 被動元件",
+      "cake_layer": 3,
+      "avg_change": 8.67,
+      "avg_vol_ratio": 0.91,
+      "best_ticker": "大毅",
       "best_pct": 10.0,
-      "worst_ticker": "同欣電",
-      "worst_pct": -4.71,
+      "worst_ticker": "聚鼎",
+      "worst_pct": 3.93,
       "top_stocks": [
         {
-          "ticker": "5434.TW",
-          "display_name": "崇越科",
+          "ticker": "2478.TW",
+          "display_name": "大毅",
           "change_pct": 10.0
         },
         {
-          "ticker": "6139.TW",
-          "display_name": "亞翔",
-          "change_pct": 8.77
+          "ticker": "2492.TW",
+          "display_name": "華新科",
+          "change_pct": 9.92
         },
         {
-          "ticker": "2404.TW",
-          "display_name": "漢唐",
-          "change_pct": 1.49
+          "ticker": "2375.TW",
+          "display_name": "智寶",
+          "change_pct": 9.87
+        }
+      ],
+      "buzz_total": 6,
+      "buzz_top": "智寶"
+    },
+    {
+      "layer_id": "power_devices",
+      "label": "🔋 功率/類比IC/SiC",
+      "cake_layer": 3,
+      "avg_change": 8.14,
+      "avg_vol_ratio": 0.53,
+      "best_ticker": "漢磊",
+      "best_pct": 10.0,
+      "worst_ticker": "聯陽",
+      "worst_pct": 0.95,
+      "top_stocks": [
+        {
+          "ticker": "3707.TWO",
+          "display_name": "漢磊",
+          "change_pct": 10.0
+        },
+        {
+          "ticker": "8261.TW",
+          "display_name": "富鼎",
+          "change_pct": 9.96
+        },
+        {
+          "ticker": "2481.TW",
+          "display_name": "強茂",
+          "change_pct": 9.94
+        }
+      ],
+      "buzz_total": 11,
+      "buzz_top": "富鼎"
+    },
+    {
+      "layer_id": "adv_packaging",
+      "label": "📦 先進封裝",
+      "cake_layer": 2,
+      "avg_change": 6.59,
+      "avg_vol_ratio": 0.62,
+      "best_ticker": "南茂",
+      "best_pct": 9.94,
+      "worst_ticker": "菱生精密",
+      "worst_pct": 2.48,
+      "top_stocks": [
+        {
+          "ticker": "8150.TW",
+          "display_name": "南茂",
+          "change_pct": 9.94
+        },
+        {
+          "ticker": "2449.TW",
+          "display_name": "京元電子",
+          "change_pct": 9.4
+        },
+        {
+          "ticker": "3711.TW",
+          "display_name": "日月光投控",
+          "change_pct": 8.45
         }
       ],
       "buzz_total": 15,
-      "buzz_top": "同欣電"
+      "buzz_top": "京元電子"
+    },
+    {
+      "layer_id": "networking",
+      "label": "🔌 網路/交換機",
+      "cake_layer": 3,
+      "avg_change": 5.6,
+      "avg_vol_ratio": 0.79,
+      "best_ticker": "啟碁",
+      "best_pct": 9.96,
+      "worst_ticker": "眾達-KY",
+      "worst_pct": 1.5,
+      "top_stocks": [
+        {
+          "ticker": "6285.TW",
+          "display_name": "啟碁",
+          "change_pct": 9.96
+        },
+        {
+          "ticker": "2345.TW",
+          "display_name": "智邦",
+          "change_pct": 6.62
+        },
+        {
+          "ticker": "2332.TW",
+          "display_name": "友訊",
+          "change_pct": 5.78
+        }
+      ],
+      "buzz_total": 10,
+      "buzz_top": "啟碁"
+    },
+    {
+      "layer_id": "chip_foundry",
+      "label": "🏭 晶片/代工",
+      "cake_layer": 1,
+      "avg_change": 5.01,
+      "avg_vol_ratio": 1.02,
+      "best_ticker": "創意",
+      "best_pct": 9.62,
+      "worst_ticker": "聯電",
+      "worst_pct": 0.3,
+      "top_stocks": [
+        {
+          "ticker": "3443.TW",
+          "display_name": "創意",
+          "change_pct": 9.62
+        },
+        {
+          "ticker": "2454.TW",
+          "display_name": "聯發科",
+          "change_pct": 8.57
+        },
+        {
+          "ticker": "3661.TW",
+          "display_name": "世芯",
+          "change_pct": 4.89
+        }
+      ],
+      "buzz_total": 26,
+      "buzz_top": "台積電"
     },
     {
       "layer_id": "power_thermal",
       "label": "⚡ 電源/氣冷",
       "cake_layer": 3,
-      "avg_change": 2.25,
-      "avg_vol_ratio": 0.84,
-      "best_ticker": "台達電",
-      "best_pct": 5.25,
-      "worst_ticker": "健策",
-      "worst_pct": -1.67,
+      "avg_change": 4.74,
+      "avg_vol_ratio": 0.94,
+      "best_ticker": "奇鋐",
+      "best_pct": 9.78,
+      "worst_ticker": "台達電",
+      "worst_pct": 2.36,
       "top_stocks": [
         {
-          "ticker": "2308.TW",
-          "display_name": "台達電",
-          "change_pct": 5.25
+          "ticker": "3017.TW",
+          "display_name": "奇鋐",
+          "change_pct": 9.78
         },
         {
           "ticker": "2301.TW",
@@ -54,407 +174,287 @@
           "change_pct": 4.96
         },
         {
-          "ticker": "3017.TW",
-          "display_name": "奇鋐",
-          "change_pct": 2.0
+          "ticker": "3044.TW",
+          "display_name": "健策",
+          "change_pct": 3.7
         }
       ],
-      "buzz_total": 18,
+      "buzz_total": 19,
       "buzz_top": "光寶科"
-    },
-    {
-      "layer_id": "satellite",
-      "label": "🛰️ 衛星通訊",
-      "cake_layer": 4,
-      "avg_change": 2.07,
-      "avg_vol_ratio": 1.14,
-      "best_ticker": "台揚",
-      "best_pct": 4.35,
-      "worst_ticker": "中華電",
-      "worst_pct": -0.7,
-      "top_stocks": [
-        {
-          "ticker": "2314.TW",
-          "display_name": "台揚",
-          "change_pct": 4.35
-        },
-        {
-          "ticker": "3596.TW",
-          "display_name": "智易",
-          "change_pct": 3.58
-        },
-        {
-          "ticker": "3062.TW",
-          "display_name": "建漢",
-          "change_pct": 3.54
-        }
-      ],
-      "buzz_total": 18,
-      "buzz_top": "台灣大"
     },
     {
       "layer_id": "aipc",
       "label": "💻 AIPC/消費電子",
       "cake_layer": 4,
-      "avg_change": 2.03,
-      "avg_vol_ratio": 1.07,
-      "best_ticker": "微星",
-      "best_pct": 5.7,
+      "avg_change": 3.04,
+      "avg_vol_ratio": 1.54,
+      "best_ticker": "技嘉",
+      "best_pct": 5.85,
       "worst_ticker": "華碩",
-      "worst_pct": 0.29,
+      "worst_pct": -0.43,
       "top_stocks": [
-        {
-          "ticker": "2377.TW",
-          "display_name": "微星",
-          "change_pct": 5.7
-        },
         {
           "ticker": "2376.TW",
           "display_name": "技嘉",
-          "change_pct": 1.72
+          "change_pct": 5.85
         },
         {
-          "ticker": "4938.TW",
-          "display_name": "和碩",
-          "change_pct": 1.48
+          "ticker": "2377.TW",
+          "display_name": "微星",
+          "change_pct": 5.04
+        },
+        {
+          "ticker": "2353.TW",
+          "display_name": "宏碁",
+          "change_pct": 2.8
         }
       ],
-      "buzz_total": 43,
+      "buzz_total": 45,
       "buzz_top": "微星"
-    },
-    {
-      "layer_id": "ai_server",
-      "label": "🖥️ AI伺服器/ODM",
-      "cake_layer": 2,
-      "avg_change": 2.03,
-      "avg_vol_ratio": 0.83,
-      "best_ticker": "緯穎",
-      "best_pct": 7.01,
-      "worst_ticker": "鴻海",
-      "worst_pct": -0.8,
-      "top_stocks": [
-        {
-          "ticker": "6669.TW",
-          "display_name": "緯穎",
-          "change_pct": 7.01
-        },
-        {
-          "ticker": "2356.TW",
-          "display_name": "英業達",
-          "change_pct": 1.58
-        },
-        {
-          "ticker": "2382.TW",
-          "display_name": "廣達",
-          "change_pct": 1.38
-        }
-      ],
-      "buzz_total": 12,
-      "buzz_top": "鴻海"
-    },
-    {
-      "layer_id": "robotics",
-      "label": "🦾 機器人/自動化",
-      "cake_layer": 4,
-      "avg_change": 1.5,
-      "avg_vol_ratio": 0.96,
-      "best_ticker": "上銀",
-      "best_pct": 3.75,
-      "worst_ticker": "直得",
-      "worst_pct": -1.08,
-      "top_stocks": [
-        {
-          "ticker": "2049.TW",
-          "display_name": "上銀",
-          "change_pct": 3.75
-        },
-        {
-          "ticker": "2395.TW",
-          "display_name": "研華",
-          "change_pct": 3.73
-        },
-        {
-          "ticker": "1504.TW",
-          "display_name": "東元",
-          "change_pct": 1.62
-        }
-      ],
-      "buzz_total": 5,
-      "buzz_top": "上銀"
-    },
-    {
-      "layer_id": "heavy_elec",
-      "label": "🏭 重電/電網",
-      "cake_layer": 3,
-      "avg_change": 1.23,
-      "avg_vol_ratio": 0.58,
-      "best_ticker": "大同",
-      "best_pct": 3.63,
-      "worst_ticker": "中興電",
-      "worst_pct": 0.0,
-      "top_stocks": [
-        {
-          "ticker": "2371.TW",
-          "display_name": "大同",
-          "change_pct": 3.63
-        },
-        {
-          "ticker": "1503.TW",
-          "display_name": "士電",
-          "change_pct": 1.71
-        },
-        {
-          "ticker": "1514.TW",
-          "display_name": "亞力",
-          "change_pct": 0.42
-        }
-      ],
-      "buzz_total": 3,
-      "buzz_top": "華城"
-    },
-    {
-      "layer_id": "chip_foundry",
-      "label": "🏭 晶片/代工",
-      "cake_layer": 1,
-      "avg_change": 1.0,
-      "avg_vol_ratio": 0.64,
-      "best_ticker": "世芯",
-      "best_pct": 2.97,
-      "worst_ticker": "聯電",
-      "worst_pct": 0.0,
-      "top_stocks": [
-        {
-          "ticker": "3661.TW",
-          "display_name": "世芯",
-          "change_pct": 2.97
-        },
-        {
-          "ticker": "2330.TW",
-          "display_name": "台積電",
-          "change_pct": 1.28
-        },
-        {
-          "ticker": "2454.TW",
-          "display_name": "聯發科",
-          "change_pct": 0.77
-        }
-      ],
-      "buzz_total": 22,
-      "buzz_top": "台積電"
-    },
-    {
-      "layer_id": "networking",
-      "label": "🔌 網路/交換機",
-      "cake_layer": 3,
-      "avg_change": 0.9,
-      "avg_vol_ratio": 0.59,
-      "best_ticker": "明泰",
-      "best_pct": 3.81,
-      "worst_ticker": "智邦",
-      "worst_pct": -1.68,
-      "top_stocks": [
-        {
-          "ticker": "3380.TW",
-          "display_name": "明泰",
-          "change_pct": 3.81
-        },
-        {
-          "ticker": "4977.TW",
-          "display_name": "眾達-KY",
-          "change_pct": 1.52
-        },
-        {
-          "ticker": "2332.TW",
-          "display_name": "友訊",
-          "change_pct": 0.87
-        }
-      ],
-      "buzz_total": 9,
-      "buzz_top": "啟碁"
-    },
-    {
-      "layer_id": "memory",
-      "label": "💾 記憶體/HBM",
-      "cake_layer": 2,
-      "avg_change": 0.16,
-      "avg_vol_ratio": 1.06,
-      "best_ticker": "祥碩",
-      "best_pct": 8.06,
-      "worst_ticker": "南電",
-      "worst_pct": -4.0,
-      "top_stocks": [
-        {
-          "ticker": "5269.TW",
-          "display_name": "祥碩",
-          "change_pct": 8.06
-        },
-        {
-          "ticker": "2408.TW",
-          "display_name": "南亞科",
-          "change_pct": 0.89
-        },
-        {
-          "ticker": "2344.TW",
-          "display_name": "華邦電",
-          "change_pct": -1.69
-        }
-      ],
-      "buzz_total": 39,
-      "buzz_top": "南亞科"
     },
     {
       "layer_id": "liquid_cooling",
       "label": "💧 液冷散熱",
       "cake_layer": 3,
-      "avg_change": -0.17,
-      "avg_vol_ratio": 0.56,
-      "best_ticker": "川湖",
-      "best_pct": 1.72,
-      "worst_ticker": "健策精",
-      "worst_pct": -2.5,
+      "avg_change": 2.94,
+      "avg_vol_ratio": 0.57,
+      "best_ticker": "泰碩",
+      "best_pct": 3.8,
+      "worst_ticker": "健鼎",
+      "worst_pct": 1.6,
       "top_stocks": [
+        {
+          "ticker": "3338.TW",
+          "display_name": "泰碩",
+          "change_pct": 3.8
+        },
         {
           "ticker": "2059.TW",
           "display_name": "川湖",
-          "change_pct": 1.72
+          "change_pct": 3.52
         },
         {
-          "ticker": "3043.TW",
-          "display_name": "健鼎",
-          "change_pct": 1.63
-        },
-        {
-          "ticker": "6230.TW",
-          "display_name": "超眾",
-          "change_pct": -0.82
+          "ticker": "3653.TW",
+          "display_name": "健策精",
+          "change_pct": 3.31
         }
       ],
-      "buzz_total": 13,
+      "buzz_total": 10,
       "buzz_top": "超眾"
     },
     {
-      "layer_id": "power_devices",
-      "label": "🔋 功率/類比IC/SiC",
-      "cake_layer": 3,
-      "avg_change": -1.56,
-      "avg_vol_ratio": 0.68,
-      "best_ticker": "聯陽",
-      "best_pct": 1.94,
-      "worst_ticker": "強茂",
-      "worst_pct": -5.14,
+      "layer_id": "robotics",
+      "label": "🦾 機器人/自動化",
+      "cake_layer": 4,
+      "avg_change": 2.31,
+      "avg_vol_ratio": 0.8,
+      "best_ticker": "研華",
+      "best_pct": 4.13,
+      "worst_ticker": "東元",
+      "worst_pct": 1.59,
       "top_stocks": [
         {
-          "ticker": "3014.TW",
-          "display_name": "聯陽",
-          "change_pct": 1.94
+          "ticker": "2395.TW",
+          "display_name": "研華",
+          "change_pct": 4.13
         },
         {
-          "ticker": "8261.TW",
-          "display_name": "富鼎",
-          "change_pct": 0.82
+          "ticker": "1597.TW",
+          "display_name": "直得",
+          "change_pct": 2.17
         },
         {
-          "ticker": "6488.TWO",
-          "display_name": "環球晶",
-          "change_pct": -2.24
+          "ticker": "2049.TW",
+          "display_name": "上銀",
+          "change_pct": 2.04
         }
       ],
-      "buzz_total": 11,
-      "buzz_top": "富鼎"
-    },
-    {
-      "layer_id": "passive_components",
-      "label": "🔩 被動元件",
-      "cake_layer": 3,
-      "avg_change": -1.65,
-      "avg_vol_ratio": 0.56,
-      "best_ticker": "聚鼎",
-      "best_pct": 2.61,
-      "worst_ticker": "大毅",
-      "worst_pct": -5.96,
-      "top_stocks": [
-        {
-          "ticker": "6112.TW",
-          "display_name": "聚鼎",
-          "change_pct": 2.61
-        },
-        {
-          "ticker": "2327.TW",
-          "display_name": "國巨",
-          "change_pct": 2.46
-        },
-        {
-          "ticker": "2375.TW",
-          "display_name": "智寶",
-          "change_pct": -2.53
-        }
-      ],
-      "buzz_total": 8,
-      "buzz_top": "智寶"
+      "buzz_total": 9,
+      "buzz_top": "東元"
     },
     {
       "layer_id": "optical",
       "label": "💡 高速光模組",
       "cake_layer": 3,
-      "avg_change": -2.7,
-      "avg_vol_ratio": 0.63,
-      "best_ticker": "科佳",
-      "best_pct": 2.06,
-      "worst_ticker": "精材",
-      "worst_pct": -8.72,
+      "avg_change": 2.08,
+      "avg_vol_ratio": 0.76,
+      "best_ticker": "聯鈞",
+      "best_pct": 5.35,
+      "worst_ticker": "台灣精銳",
+      "worst_pct": -0.44,
       "top_stocks": [
         {
-          "ticker": "3030.TW",
-          "display_name": "科佳",
-          "change_pct": 2.06
-        },
-        {
-          "ticker": "6177.TW",
-          "display_name": "台灣精銳",
-          "change_pct": -0.77
+          "ticker": "3450.TW",
+          "display_name": "聯鈞",
+          "change_pct": 5.35
         },
         {
           "ticker": "2393.TW",
           "display_name": "億光",
-          "change_pct": -1.33
+          "change_pct": 1.95
+        },
+        {
+          "ticker": "3030.TW",
+          "display_name": "科佳",
+          "change_pct": 1.87
+        }
+      ],
+      "buzz_total": 27,
+      "buzz_top": "億光"
+    },
+    {
+      "layer_id": "memory",
+      "label": "💾 記憶體/HBM",
+      "cake_layer": 2,
+      "avg_change": 1.92,
+      "avg_vol_ratio": 0.83,
+      "best_ticker": "南電",
+      "best_pct": 9.72,
+      "worst_ticker": "旺宏",
+      "worst_pct": -1.89,
+      "top_stocks": [
+        {
+          "ticker": "8046.TW",
+          "display_name": "南電",
+          "change_pct": 9.72
+        },
+        {
+          "ticker": "2344.TW",
+          "display_name": "華邦電",
+          "change_pct": 2.22
+        },
+        {
+          "ticker": "2408.TW",
+          "display_name": "南亞科",
+          "change_pct": -0.11
+        }
+      ],
+      "buzz_total": 51,
+      "buzz_top": "華邦電"
+    },
+    {
+      "layer_id": "facility",
+      "label": "🏗️ 廠務工程",
+      "cake_layer": 2,
+      "avg_change": 1.92,
+      "avg_vol_ratio": 1.49,
+      "best_ticker": "同欣電",
+      "best_pct": 9.88,
+      "worst_ticker": "亞翔",
+      "worst_pct": -3.35,
+      "top_stocks": [
+        {
+          "ticker": "6271.TW",
+          "display_name": "同欣電",
+          "change_pct": 9.88
+        },
+        {
+          "ticker": "6196.TW",
+          "display_name": "帆宣",
+          "change_pct": 4.14
+        },
+        {
+          "ticker": "5434.TW",
+          "display_name": "崇越科",
+          "change_pct": 1.86
+        }
+      ],
+      "buzz_total": 15,
+      "buzz_top": "同欣電"
+    },
+    {
+      "layer_id": "ai_server",
+      "label": "🖥️ AI伺服器/ODM",
+      "cake_layer": 2,
+      "avg_change": 1.89,
+      "avg_vol_ratio": 1.02,
+      "best_ticker": "英業達",
+      "best_pct": 3.58,
+      "worst_ticker": "廣達",
+      "worst_pct": 0.27,
+      "top_stocks": [
+        {
+          "ticker": "2356.TW",
+          "display_name": "英業達",
+          "change_pct": 3.58
+        },
+        {
+          "ticker": "3231.TW",
+          "display_name": "緯創",
+          "change_pct": 2.59
+        },
+        {
+          "ticker": "2317.TW",
+          "display_name": "鴻海",
+          "change_pct": 1.83
+        }
+      ],
+      "buzz_total": 15,
+      "buzz_top": "緯穎"
+    },
+    {
+      "layer_id": "satellite",
+      "label": "🛰️ 衛星通訊",
+      "cake_layer": 4,
+      "avg_change": 1.68,
+      "avg_vol_ratio": 1.35,
+      "best_ticker": "台揚",
+      "best_pct": 7.29,
+      "worst_ticker": "台灣大",
+      "worst_pct": -1.27,
+      "top_stocks": [
+        {
+          "ticker": "2314.TW",
+          "display_name": "台揚",
+          "change_pct": 7.29
+        },
+        {
+          "ticker": "3596.TW",
+          "display_name": "智易",
+          "change_pct": 2.13
+        },
+        {
+          "ticker": "3062.TW",
+          "display_name": "建漢",
+          "change_pct": 0.6
         }
       ],
       "buzz_total": 25,
-      "buzz_top": "台灣精銳"
+      "buzz_top": "台灣大"
     },
     {
-      "layer_id": "adv_packaging",
-      "label": "📦 先進封裝",
-      "cake_layer": 2,
-      "avg_change": -3.05,
-      "avg_vol_ratio": 0.56,
-      "best_ticker": "京元電子",
-      "best_pct": 0.16,
-      "worst_ticker": "菱生精密",
-      "worst_pct": -6.59,
+      "layer_id": "heavy_elec",
+      "label": "🏭 重電/電網",
+      "cake_layer": 3,
+      "avg_change": 0.94,
+      "avg_vol_ratio": 0.65,
+      "best_ticker": "亞力",
+      "best_pct": 3.36,
+      "worst_ticker": "華城",
+      "worst_pct": -0.89,
       "top_stocks": [
         {
-          "ticker": "2449.TW",
-          "display_name": "京元電子",
-          "change_pct": 0.16
+          "ticker": "1514.TW",
+          "display_name": "亞力",
+          "change_pct": 3.36
         },
         {
-          "ticker": "3711.TW",
-          "display_name": "日月光投控",
-          "change_pct": -0.79
+          "ticker": "1513.TW",
+          "display_name": "中興電",
+          "change_pct": 0.85
         },
         {
-          "ticker": "2329.TW",
-          "display_name": "華泰",
-          "change_pct": -2.06
+          "ticker": "1503.TW",
+          "display_name": "士電",
+          "change_pct": 0.84
         }
       ],
-      "buzz_total": 10,
-      "buzz_top": "京元電子"
+      "buzz_total": 2,
+      "buzz_top": "華城"
     }
   ],
   "social_buzz": {
-    "updated_at": "2026-06-29T13:05:03.679788Z",
+    "updated_at": "2026-06-30T11:43:21.859100Z",
     "sources": [
       "news"
     ],
@@ -463,9 +463,9 @@
         "display_name": "台積電",
         "ptt": 0,
         "youtube": 0,
-        "news": 9,
-        "total": 9,
-        "score": 18.0
+        "news": 13,
+        "total": 13,
+        "score": 26.0
       },
       "2454.TW": {
         "display_name": "聯發科",
@@ -519,9 +519,9 @@
         "display_name": "緯穎",
         "ptt": 0,
         "youtube": 0,
-        "news": 3,
-        "total": 3,
-        "score": 6.0
+        "news": 6,
+        "total": 6,
+        "score": 12.0
       },
       "2356.TW": {
         "display_name": "英業達",
@@ -551,9 +551,9 @@
         "display_name": "華邦電",
         "ptt": 0,
         "youtube": 0,
-        "news": 15,
-        "total": 15,
-        "score": 30.0
+        "news": 21,
+        "total": 21,
+        "score": 42.0
       },
       "2337.TW": {
         "display_name": "旺宏",
@@ -567,9 +567,9 @@
         "display_name": "南電",
         "ptt": 0,
         "youtube": 0,
-        "news": 1,
-        "total": 1,
-        "score": 2.0
+        "news": 7,
+        "total": 7,
+        "score": 14.0
       },
       "5269.TW": {
         "display_name": "祥碩",
@@ -599,9 +599,9 @@
         "display_name": "京元電子",
         "ptt": 0,
         "youtube": 0,
-        "news": 5,
-        "total": 5,
-        "score": 10.0
+        "news": 10,
+        "total": 10,
+        "score": 20.0
       },
       "2329.TW": {
         "display_name": "華泰",
@@ -663,9 +663,9 @@
         "display_name": "台達電",
         "ptt": 0,
         "youtube": 0,
-        "news": 2,
-        "total": 2,
-        "score": 4.0
+        "news": 3,
+        "total": 3,
+        "score": 6.0
       },
       "2301.TW": {
         "display_name": "光寶科",
@@ -703,17 +703,17 @@
         "display_name": "超眾",
         "ptt": 0,
         "youtube": 0,
-        "news": 8,
-        "total": 8,
-        "score": 16.0
+        "news": 7,
+        "total": 7,
+        "score": 14.0
       },
       "3338.TW": {
         "display_name": "泰碩",
         "ptt": 0,
         "youtube": 0,
-        "news": 3,
-        "total": 3,
-        "score": 6.0
+        "news": 0,
+        "total": 0,
+        "score": 0.0
       },
       "3653.TW": {
         "display_name": "健策精",
@@ -727,17 +727,17 @@
         "display_name": "健鼎",
         "ptt": 0,
         "youtube": 0,
-        "news": 1,
-        "total": 1,
-        "score": 2.0
+        "news": 3,
+        "total": 3,
+        "score": 6.0
       },
       "2059.TW": {
         "display_name": "川湖",
         "ptt": 0,
         "youtube": 0,
-        "news": 1,
-        "total": 1,
-        "score": 2.0
+        "news": 0,
+        "total": 0,
+        "score": 0.0
       },
       "2345.TW": {
         "display_name": "智邦",
@@ -751,9 +751,9 @@
         "display_name": "啟碁",
         "ptt": 0,
         "youtube": 0,
-        "news": 8,
-        "total": 8,
-        "score": 16.0
+        "news": 9,
+        "total": 9,
+        "score": 18.0
       },
       "4977.TW": {
         "display_name": "眾達-KY",
@@ -783,9 +783,9 @@
         "display_name": "億光",
         "ptt": 0,
         "youtube": 0,
-        "news": 7,
-        "total": 7,
-        "score": 14.0
+        "news": 9,
+        "total": 9,
+        "score": 18.0
       },
       "3450.TW": {
         "display_name": "聯鈞",
@@ -847,9 +847,9 @@
         "display_name": "聚鼎",
         "ptt": 0,
         "youtube": 0,
-        "news": 2,
-        "total": 2,
-        "score": 4.0
+        "news": 0,
+        "total": 0,
+        "score": 0.0
       },
       "2478.TW": {
         "display_name": "大毅",
@@ -903,9 +903,9 @@
         "display_name": "華城",
         "ptt": 0,
         "youtube": 0,
-        "news": 2,
-        "total": 2,
-        "score": 4.0
+        "news": 1,
+        "total": 1,
+        "score": 2.0
       },
       "1513.TW": {
         "display_name": "中興電",
@@ -943,25 +943,25 @@
         "display_name": "上銀",
         "ptt": 0,
         "youtube": 0,
-        "news": 2,
-        "total": 2,
-        "score": 4.0
+        "news": 3,
+        "total": 3,
+        "score": 6.0
       },
       "2395.TW": {
         "display_name": "研華",
         "ptt": 0,
         "youtube": 0,
-        "news": 2,
-        "total": 2,
-        "score": 4.0
+        "news": 0,
+        "total": 0,
+        "score": 0.0
       },
       "1504.TW": {
         "display_name": "東元",
         "ptt": 0,
         "youtube": 0,
-        "news": 0,
-        "total": 0,
-        "score": 0.0
+        "news": 5,
+        "total": 5,
+        "score": 10.0
       },
       "2453.TW": {
         "display_name": "盟立",
@@ -991,9 +991,9 @@
         "display_name": "宏碁",
         "ptt": 0,
         "youtube": 0,
-        "news": 1,
-        "total": 1,
-        "score": 2.0
+        "news": 3,
+        "total": 3,
+        "score": 6.0
       },
       "2376.TW": {
         "display_name": "技嘉",
@@ -1039,51 +1039,51 @@
         "display_name": "建漢",
         "ptt": 0,
         "youtube": 0,
-        "news": 0,
-        "total": 0,
-        "score": 0.0
+        "news": 1,
+        "total": 1,
+        "score": 2.0
       },
       "3045.TW": {
         "display_name": "台灣大",
         "ptt": 0,
         "youtube": 0,
-        "news": 14,
-        "total": 14,
-        "score": 28.0
+        "news": 16,
+        "total": 16,
+        "score": 32.0
       },
       "2412.TW": {
         "display_name": "中華電",
         "ptt": 0,
         "youtube": 0,
-        "news": 3,
-        "total": 3,
-        "score": 6.0
+        "news": 7,
+        "total": 7,
+        "score": 14.0
       }
     },
     "by_layer": {
       "chip_foundry": {
-        "total": 22,
-        "score": 44.0,
+        "total": 26,
+        "score": 52.0,
         "top_ticker": "台積電",
-        "top_score": 18.0
+        "top_score": 26.0
       },
       "ai_server": {
-        "total": 12,
-        "score": 24.0,
-        "top_ticker": "鴻海",
-        "top_score": 8.0
+        "total": 15,
+        "score": 30.0,
+        "top_ticker": "緯穎",
+        "top_score": 12.0
       },
       "memory": {
-        "total": 39,
-        "score": 78.0,
-        "top_ticker": "南亞科",
-        "top_score": 30.0
+        "total": 51,
+        "score": 102.0,
+        "top_ticker": "華邦電",
+        "top_score": 42.0
       },
       "adv_packaging": {
-        "total": 10,
-        "score": 20.0,
+        "total": 15,
+        "score": 30.0,
         "top_ticker": "京元電子",
-        "top_score": 10.0
+        "top_score": 20.0
       },
       "facility": {
         "total": 15,
@@ -1092,32 +1092,32 @@
         "top_score": 20.0
       },
       "power_thermal": {
-        "total": 18,
-        "score": 36.0,
+        "total": 19,
+        "score": 38.0,
         "top_ticker": "光寶科",
         "top_score": 12.0
       },
       "liquid_cooling": {
-        "total": 13,
-        "score": 26.0,
+        "total": 10,
+        "score": 20.0,
         "top_ticker": "超眾",
-        "top_score": 16.0
+        "top_score": 14.0
       },
       "networking": {
-        "total": 9,
-        "score": 18.0,
+        "total": 10,
+        "score": 20.0,
         "top_ticker": "啟碁",
-        "top_score": 16.0
+        "top_score": 18.0
       },
       "optical": {
-        "total": 25,
-        "score": 50.0,
-        "top_ticker": "台灣精銳",
-        "top_score": 16.0
+        "total": 27,
+        "score": 54.0,
+        "top_ticker": "億光",
+        "top_score": 18.0
       },
       "passive_components": {
-        "total": 8,
-        "score": 16.0,
+        "total": 6,
+        "score": 12.0,
         "top_ticker": "智寶",
         "top_score": 10.0
       },
@@ -1128,28 +1128,28 @@
         "top_score": 16.0
       },
       "heavy_elec": {
-        "total": 3,
-        "score": 6.0,
+        "total": 2,
+        "score": 4.0,
         "top_ticker": "華城",
-        "top_score": 4.0
+        "top_score": 2.0
       },
       "robotics": {
-        "total": 5,
-        "score": 10.0,
-        "top_ticker": "上銀",
-        "top_score": 4.0
+        "total": 9,
+        "score": 18.0,
+        "top_ticker": "東元",
+        "top_score": 10.0
       },
       "aipc": {
-        "total": 43,
-        "score": 86.0,
+        "total": 45,
+        "score": 90.0,
         "top_ticker": "微星",
         "top_score": 48.0
       },
       "satellite": {
-        "total": 18,
-        "score": 36.0,
+        "total": 25,
+        "score": 50.0,
         "top_ticker": "台灣大",
-        "top_score": 28.0
+        "top_score": 32.0
       }
     },
     "top5": [
@@ -1163,6 +1163,15 @@
         "score": 48.0
       },
       {
+        "ticker": "2344.TW",
+        "display_name": "華邦電",
+        "ptt": 0,
+        "youtube": 0,
+        "news": 21,
+        "total": 21,
+        "score": 42.0
+      },
+      {
         "ticker": "2357.TW",
         "display_name": "華碩",
         "ptt": 0,
@@ -1172,6 +1181,15 @@
         "score": 36.0
       },
       {
+        "ticker": "3045.TW",
+        "display_name": "台灣大",
+        "ptt": 0,
+        "youtube": 0,
+        "news": 16,
+        "total": 16,
+        "score": 32.0
+      },
+      {
         "ticker": "2408.TW",
         "display_name": "南亞科",
         "ptt": 0,
@@ -1179,30 +1197,12 @@
         "news": 15,
         "total": 15,
         "score": 30.0
-      },
-      {
-        "ticker": "2344.TW",
-        "display_name": "華邦電",
-        "ptt": 0,
-        "youtube": 0,
-        "news": 15,
-        "total": 15,
-        "score": 30.0
-      },
-      {
-        "ticker": "3045.TW",
-        "display_name": "台灣大",
-        "ptt": 0,
-        "youtube": 0,
-        "news": 14,
-        "total": 14,
-        "score": 28.0
       }
     ]
   },
   "data_quality": {
     "status": "ok",
-    "checked_at": "2026-06-29T13:04:57.440331Z",
+    "checked_at": "2026-06-30T11:43:14.532646Z",
     "summary": "All checks passed",
     "issues": []
   }
